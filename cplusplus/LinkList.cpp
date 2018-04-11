@@ -118,7 +118,7 @@ void Linklist::Delete(int position)
 		return;
 	if (position > Size())
 	{
-		cout << "the position is big than linklist size" << endl;
+		cout << "The position is big than linklist size" << endl;
 		return;
 	}
 
@@ -132,7 +132,7 @@ void Linklist::Delete(int position)
 		{
 			current_node = current_node->next;
 		}
-		cout << "deletet number is " << current_node->next->data << endl;
+		cout << "Deletet number is " << current_node->next->data << endl;
 		current_node->next = current_node->next->next;
 	}
 }
@@ -152,7 +152,7 @@ void Linklist::Delete(Node node)
 		}
 		else
 		{
-			cout << "deletet number is " << current_node->data << endl;
+			cout << "Deletet number is " << current_node->data << endl;
 			pre_current_node->next = current_node->next;
 			current_node = pre_current_node;
 
@@ -172,18 +172,19 @@ int main()
 	cout << "<<<the size of the linklist is>>>:" << size << endl;
 	linklist.Output();
 	Node oneNode(5);
-	cout << "after delete xxxxxxxxxxxxxxxxxxxx" << endl;
 
 	//linklist.Delete(5);
 	linklist.Delete(oneNode);
+	cout << "<<<Deleting one Node>>>........." << endl;
 	size = linklist.Size();
-	cout << "After delete one item,the size of the linklist is:" << size << endl;
+	cout << "<<<After delete one item,the size of the linklist is>>>:" << size << endl;
 	linklist.Output();
 
-	linklist.Modify(1, 10);
-	cout << "after Modify xxxxxxxxxxxxxxxxxxxx" << endl;
+	linklist.Modify(2, 10);
+	cout << "<<<Modifing one Node item>>>........." << endl;
+
+	cout << "<<<After Modify the linklist>>>:" << endl;
 	linklist.Output();
 	return 0;
-
 
 }
