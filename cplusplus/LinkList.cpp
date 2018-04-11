@@ -173,6 +173,7 @@ int main()
 	linklist.Output();
 	Node oneNode(5);
 
+
 	//linklist.Delete(5);
 	linklist.Delete(oneNode);
 	cout << "<<<Deleting one Node>>>........." << endl;
