@@ -1,0 +1,4 @@
+rm oclMain
+#g++   -std=c++11 -Wall -Wextra -g oclSetup.cpp oclMain.cpp -o main -I/opt/rocm/opencl/include  -L /opt/rocm/opencl/lib/x86_64 -lOpenCL
+
+g++   -std=c++11    oclMain.cpp -o oclMain -I/opt/rocm/opencl/include  -L /opt/rocm/opencl/lib/x86_64 -lOpenCL
